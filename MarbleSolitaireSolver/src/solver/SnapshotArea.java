@@ -192,21 +192,21 @@ public class SnapshotArea {
 	
 	char[][] clonePlayArea(){
 		
-//		char clone[][] = {
-//				{'w','w','b','b','b','w','w'},
-//				{'w','w','b','b','b','w','w'},
-//				{'b','b','b','b','b','b','b'},
-//				{'b','b','b','e','b','b','b'},
-//				{'b','b','b','b','b','b','b'},
-//				{'w','w','b','b','b','w','w'},
-//				{'w','w','b','b','b','w','w'}
-//		};
-		
 		char clone[][] = {
-				{'b','b','b'},
-				{'b','b','b'},
-				{'b','b','e'}
+				{'w','w','b','b','b','w','w'},
+				{'w','w','b','b','b','w','w'},
+				{'b','b','b','b','b','b','b'},
+				{'b','b','b','e','b','b','b'},
+				{'b','b','b','b','b','b','b'},
+				{'w','w','b','b','b','w','w'},
+				{'w','w','b','b','b','w','w'}
 		};
+		
+//		char clone[][] = {
+//				{'b','b','b'},
+//				{'b','b','b'},
+//				{'b','b','e'}
+//		};
 		
 		for(int rowIndex=0;rowIndex<Constants.BOARD_HEIGHT;rowIndex++){
 			for(int colIndex=0;colIndex<Constants.BOARD_WIDTH;colIndex++){

@@ -11,21 +11,21 @@ public class Play {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-//		char initialArea[][] = {
-//				{'w','w','b','b','b','w','w'},
-//				{'w','w','b','b','b','w','w'},
-//				{'b','b','b','b','b','b','b'},
-//				{'b','b','b','e','b','b','b'},
-//				{'b','b','b','b','b','b','b'},
-//				{'w','w','b','b','b','w','w'},
-//				{'w','w','b','b','b','w','w'}
-//		};
-		
 		char initialArea[][] = {
-				{'b','b','b'},
-				{'b','b','b'},
-				{'b','b','e'}
+				{'w','w','b','b','b','w','w'},
+				{'w','w','b','b','b','w','w'},
+				{'b','b','b','b','b','b','b'},
+				{'b','b','b','e','b','b','b'},
+				{'b','b','b','b','b','b','b'},
+				{'w','w','b','b','b','w','w'},
+				{'w','w','b','b','b','w','w'}
 		};
+		
+//		char initialArea[][] = {
+//				{'b','b','b'},
+//				{'b','b','b'},
+//				{'b','b','e'}
+//		};
 		
 		SnapshotArea a = new SnapshotArea(initialArea);
 		
@@ -45,21 +45,21 @@ public class Play {
 	
 static void playAhead(){
 		
-//		char targetArea[][] = {
-//				{'w','w','b','b','b','w','w'},
-//				{'w','w','b','b','b','w','w'},
-//				{'e','e','b','b','b','b','e'},
-//				{'e','e','e','e','b','e','e'},
-//				{'e','e','b','e','e','e','e'},
-//				{'w','w','e','e','e','w','w'},
-//				{'w','w','e','e','e','w','w'}
-//		};
-		
 		char targetArea[][] = {
-				{'b','e','b'},
-				{'e','b','e'},
-				{'b','e','e'}
+				{'w','w','b','b','b','w','w'},
+				{'w','w','b','b','b','w','w'},
+				{'e','e','b','b','b','b','e'},
+				{'e','e','e','e','b','e','e'},
+				{'e','e','b','e','e','e','e'},
+				{'w','w','e','e','e','w','w'},
+				{'w','w','e','e','e','w','w'}
 		};
+		
+//		char targetArea[][] = {
+//				{'b','e','b'},
+//				{'e','b','e'},
+//				{'b','e','e'}
+//		};
 		
 		if(snaps.peek().isSimilar(targetArea) == true){
 			System.out.println("we found a solution");
